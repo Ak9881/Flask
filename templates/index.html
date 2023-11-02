@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* CSS styles for your form elements */
+    .center {
+      text-align: center;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      width: 100px;
+      padding: 5px;
+      margin: 5px 0;
+    }
+
+    form {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="center">
+    <h1>Welcome to the Exam Results Portal</h1>
+    <p>Please enter your marks:</p>
+
+<form action="/submit" method="post">
+  <label for="science">Science:</label><br>
+  <input type="text" id="science" name="science" value="0"><br>
+  <label for="maths">Maths:</label><br>
+  <input type="text" id="maths" name="maths" value="0"><br><br>
+  <label for="c">C:</label><br>
+  <input type="text" id="c" name="c" value="0"><br><br>
+  <label for="datascience">Data Science:</label><br>
+  <input type="text" id="datascience" name="datascience" value="0"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+<h2><i>ALL the best !!!</i></h2>
+
+</div>
+
+
+<!If you click the "Submit" button, the form-data will be sent to a page called "/submit"-->
+
+
+</body>
+</html>
